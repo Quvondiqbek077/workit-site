@@ -98,6 +98,24 @@ ul {
     height: 24px;
     object-fit: cover;
 }
+.hero-image{
+    z-index: 99;
+}
+.site-hero{
+    position: relative;
+}
+.site-hero::before{
+    content: url(../images/bg-pattern-1.svg);
+    position: absolute;
+    top: 100px;
+    left: -10%;
+}
+.site-hero::after{
+    content: url(../images/bg-pattern-2.svg);
+    position: absolute;
+    bottom: 300px;
+    right: -3%;
+}
 
 .site-header__underline {
     color: var(--white);
@@ -127,6 +145,7 @@ ul {
     color: var(--Eucaplyptus);
     opacity: .6;
 }
+
 
 /* Site Hero */
 .site-hero__container {
@@ -255,7 +274,12 @@ ul {
     display: flex;
     flex-direction: column;
     row-gap: 32px;
-
+}
+.test-desc::after{
+    content: url(../images/bg-pattern-3.svg);
+    position: absolute;
+    right: 72px;
+    bottom: -60px;
 }
 
 .test-desc__title {
